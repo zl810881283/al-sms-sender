@@ -1,0 +1,10 @@
+module.exports = {
+  aliyunAccessKeyId: "yourAccessKeyId",
+  aliyunSecretAccessKey: "yourAccessKeySecret",
+  signName: "xxx",
+  templateCode: "SMS_xxxxxx",
+  aqicnToken: "yourAqicnToken",
+  users: [
+    { name: "", phone: "", city: ""},
+  ]
+}
