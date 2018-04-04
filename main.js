@@ -80,7 +80,7 @@ Observable.from(users)
         PhoneNumbers: i.phone,
         SignName: signName,
         TemplateCode: templateCode,
-        TemplateParam: i.templateParam
+        TemplateParam: JSON.stringify(i.templateParam)
       })
       code = Code
     }
