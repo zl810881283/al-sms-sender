@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "@alicloud/sms-sdk": "^1.0.8",
+    "log4js": "^2.5.3",
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
     "rxjs": "^5.5.8"
