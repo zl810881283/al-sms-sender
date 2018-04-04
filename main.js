@@ -39,13 +39,13 @@ Observable.from(users)
       templateParam.aqi_level = '优'
       templateParam.window_open = '打开'
       templateParam.outdoor_advise = '多进行'
-      templateParam.use_mask='不需要' 
+      templateParam.use_mask='不用佩戴' 
     } else if (i.aqi <= 100) {
       templateParam.aqi_level = '良，空气质量可接受，但某些污染物可能对极少数异常敏感人群健康有较弱影响。极少数异常敏感人群应减少户外活动'
       templateParam.aqi_level = '良'
       templateParam.window_open = '打开'
       templateParam.outdoor_advise = '进行'
-      templateParam.use_mask='不需要'
+      templateParam.use_mask='不用佩戴'
     } else if (i.aqi <= 150) {
       templateParam.aqi_level = '轻度污染，易感人群症状有轻度加剧，健康人群出现刺激症状。儿童、老年人及心脏病、呼吸系统疾病患者应减少长时间、高强度的户外锻炼'
       templateParam.aqi_level = '轻度污染'
