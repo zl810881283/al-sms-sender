@@ -16,13 +16,14 @@ Observable.from(users)
   .map(async user => {
     const { name, cityEn, phone, city } = user
     const aqiRes = await request({
-      uri: `https://api.waqi.info/feed/${cityEn}/`,
+      uri: `https://api.waqi.info/search/`,
       qs: {
+        keyword: cityEn,
         token: aqicnToken
       },
       json: true
     })
-    return { name, phone, city, aqi: aqiRes.data.aqi }
+    return { name, phone, city, aqi: aqiRes.data[0].aqi }
   })
   .flatMap(i => Observable.fromPromise(i))
   .map(i => {
