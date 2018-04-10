@@ -84,7 +84,7 @@ Observable.from(users)
       })
       code = Code
     }
-    return { ...templateParam, phone: i.phone, success: DEBUG ? 'debug' : code == 'OK', }
+    return { ...i.templateParam, phone: i.phone, success: DEBUG ? 'debug' : code == 'OK', }
   })
   .flatMap(i => Observable.fromPromise(i))
   .subscribe(i => {
